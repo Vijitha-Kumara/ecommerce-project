@@ -1,9 +1,11 @@
 import '../pages/HomePage.css'
 import '../pages/header.css'
 import '../pages/tracking.css'
+import Header from '../components/Header'
 
 const Tracking = ()=>{
     return <>
+        <title>Tracking</title>
        <div className="header">
       <div className="left-section">
         <a href="index.html" className="header-link">

@@ -4,6 +4,8 @@ import '../pages/orders.css'
 
 const Orders =() =>{
     return <>
+       <Header />
+         <title>Orders</title>
         <div className="header">
       <div className="left-section">
         <a href="index.html" className="header-link">
