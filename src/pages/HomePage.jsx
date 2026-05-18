@@ -1,5 +1,4 @@
-import '../pages/HomePage.css'
-import '../pages/header.css'
+import './HomePage.css'
 import Header from '../components/Header'
 
 

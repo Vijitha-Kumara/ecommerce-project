@@ -1,15 +1,15 @@
-import { Link } from 'react-router'
-const Header = () =>{
-    return <>
-<div className="header">
-       <div className="left-section">
+import { Link } from "react-router-dom";
+import "./header.css";
+
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="left-section">
         <Link to="/" className="header-link">
-          <img className="logo"
-            src="images/logo-white.png" />
-          <img className="mobile-logo"
-            src="images/mobile-logo-white.png" />
+          <img className="logo" src="images/logo-white.png" />
+          <img className="mobile-logo" src="images/mobile-logo-white.png" />
         </Link>
-       </div>
+      </div>
 
       <div className="middle-section">
         <input className="search-bar" type="text" placeholder="Search" />
@@ -20,9 +20,8 @@ const Header = () =>{
       </div>
 
       <div className="right-section">
-        <Link className="/orders-link header-link" to="/orders">
-
-          <span className="/orders-text">/orders</span>
+        <Link className="orders-link header-link" to="/orders">
+          <span className="orders-text">Orders</span>
         </Link>
 
         <Link className="cart-link header-link" to="/checkout">
@@ -31,10 +30,8 @@ const Header = () =>{
           <div className="cart-text">Cart</div>
         </Link>
       </div>
-    </div> 
+    </div>
+  );
+};
 
-    
-    </>
-}
-
-export default Header
+export default Header;
